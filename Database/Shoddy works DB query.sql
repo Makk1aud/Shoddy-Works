@@ -3,7 +3,7 @@ CREATE TABLE Client (
     client_id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     firstname VARCHAR(20) NOT NULL,
     lastname VARCHAR(20) NULL,
-    login VARCHAR(20) NOT NULL,
+    login VARCHAR(20) NOT NULL UNIQUE,
     password VARCHAR(20) NOT NULL,
     email VARCHAR(30) NOT NULL,
     ref_client_id INT NULL,
@@ -16,10 +16,10 @@ CREATE TABLE Mentor (
     mentor_id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     firstname VARCHAR(20) NOT NULL,
     lastname VARCHAR(20) NULL,
-    login VARCHAR(20) NOT NULL,
+    login VARCHAR(20) NOT NULL UNIQUE,
     password VARCHAR(20) NOT NULL,
     email VARCHAR(30) NOT NULL,
-    phone VARCHAR(30) NULL,
+    phone VARCHAR(30) NULL UNIQUE,
     soc_media VARCHAR(150) NULL
 );
 
