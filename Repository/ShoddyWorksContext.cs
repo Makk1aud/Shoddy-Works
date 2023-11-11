@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
-using ShoddyWorks.WebApi.DbModels;
+using Entities.Models;
 
-namespace ShoddyWorks.WebApi.Models;
+namespace Repository;
 
 public partial class ShoddyWorksContext : DbContext
 {

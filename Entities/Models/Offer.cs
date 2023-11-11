@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ShoddyWorks.WebApi.DbModels;
+namespace Entities.Models;
 
 public partial class Offer
 {
